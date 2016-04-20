@@ -1,0 +1,31 @@
+html {
+	background: #000;
+}
+body {
+	background-color: #000 !important;
+}
+#logo {
+	width:100%;
+}
+.col-md-8 {
+	margin-top:3%;
+	margin-left:15%;
+	text-align: center;
+}
+.col-md-8 h3 {
+	color:#01B0EB;
+}
+#border {
+	margin-top:2%;
+	margin-bottom:5%;
+	margin-left:22%;
+}
+.col-md-4 {
+	border:1px solid #FEB713;
+	height:550px;
+	text-align: center;
+}
+.col-md-4 h4 {
+	color:#fff;
+	margin-top: 20px;
+}
