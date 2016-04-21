@@ -5,46 +5,46 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<img src="assets/images/friends_logo.jpeg" alt="Friends" id="logo">
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-8">
-				<h3>Play the Friends themed Hangman!</h3>
+				<h1>Hangman</h1>
+				<img src="assets/images/friends_logo.png" alt="Friends" id="logo">
 			</div>
 		</div>
 		<div class="row" id="border">
-			<div class="col-md-4">
-
+			<div class="col-sm-4">
+				<img id="picture" src="assets/images/friends.jpg" alt="central-perk">
 			</div>
-			<div class="col-md-4">
-				<h4>Press any key to start!</h4>
-
-				<div id="guesses">
-					
+			<div class="col-sm-4">
+				<div class="row">
+					<h3>Press any key to start!</h3>
 				</div>
-				<script>
-					var guess = 12;
-
-					document.onkeyup = function(event) {
-					var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
-						alert('pressed');
-						guess --
-						alert('Remaining guesses: ' + guess);
-
-					}
-					var html = "<h4>Number of guesses remaining: </h4>" + guess;
-
-					document.querySelector('#guesses').innerHTML = html;
-				</script>
+				<br>
+			    <div class="row">
+					<h4>Games Won</h4>
+					<h4 id="userWins"></h4>
+					<br>
+					<div id="hidWord"></div>
+				</div>
+				<br>
+				<div class="row">
+					<h4>You have this many guesses remaining</h4>
+					<h4 id="guessRemain"></h4>
+				</div>
+				<br>
+				<div class="row">
+					<h4> Letters that have been guessed</h4>
+					<h4 id="letters"></h4>
+				</div>
 			</div>
 		</div>
 	</div>
+	
 </body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 </html>
+
